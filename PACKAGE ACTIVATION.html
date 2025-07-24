@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Activation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type=text], input[type=tel] {
+            width: 100%;
+            padding: 10px;
+            margin: 6px 0 12px 0;
+: border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Activate Your Package</h2>
+        <form id="activationForm">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('activationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real application, you'd send this data to the server here.
+            window.location.href = 'payment.html';
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 50px;
+        }
+        .payment-info {
+            background-color: #fff;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .payment-info h2 {
+            margin-bottom: 20px;
+        }
+        .payment-info p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .payment-info button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #5bc0de;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        .payment-info button:hover {
+            background-color: #31b0d5;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-info">
+        <h2>Complete Your Package Activation</h2>
+        <p><strong>Account Number:</strong> 03404196961</p>
+        <p><strong>Account Name:</strong> Awais Ali</p>
+        <p><strong>Activation Fee:</strong> 500 PKR</p>
+<p>kindly send the activation fee to the above account this is the last payment afert this no payment is required .</p>
+        <button onclick="alert('Thank you for your payment!')"
+
